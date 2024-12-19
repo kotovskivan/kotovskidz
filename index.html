@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Селектори CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!--                   ↓  ГОЛОВА  ↓                   -->
+        <header class="header">
+          <div class="headerlogo">
+            <a href="index.html" class="logo-link">
+              <img src="./images/logo.png" alt="Логотип сайту" class="logo-image">
+              <span class="logo-text">NGL-school</span>
+            </a>
+          </div>
+          <div class="navmenuall">
+            <nav class="navmenu">
+              <a class="navnostyle4link" href="index.html">Головна</a>
+              <a class="navnostyle4link" href="./pages/about.html">Про нас</a>
+              <a class="navnostyle4link" href="./pages/contacts.html">Контакти</a>
+              <a class="navnostyle4link" href="./pages/articles.html">Статті</a>
+              <a class="navnostyle4link" href="./pages/gallery.html">Галерея</a>
+            </nav>
+          </div>
+        </header>
+    <p>
+        <a href="https://www.google.com.ua/">A лише безпосередні нащадок класу P</a>
+    </p>
+
+    <main>
+        <div class="standart-descrp">Тег з класом</div>
+        <div id="uniqe-id">Тег з id</div>
+        <div title="attribute">Тег з атрибутом [attribute]</div>
+        <div class="parent">
+            <p class="child">Вкладений елемент з класом .child всередині .parent</p>
+        </div>
+        <div class="parent">
+            <div class="inside-child">Дочірній елемент .nested-child у .parent</div>
+        </div>
+        <div class="combined-selector">Тег з комбінованим селектором div.first-cla</div>
+        <div class="parent">
+            <p class="combined-p">Тег p з класом .combined-p всередині</p>
+        </div>
+        <div>
+            <p id="unique">Тег p з id #unique</p>
+        </div>
+        <div>
+            <p class="multiple-classes first-class">Тег p з двома класами .multiple-classes і .first-class, вага 2*</p>
+        </div>
+        <div class="nextdescp-class">Цей div матиме фоновий колір фіолетовий</div>
+        <div>
+            <p title="last-attribute">Тег p з атрибутом title="last-attribute"</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div> <!-- Використання ідентифікаторів (ID) для стилізації суворо заборонено. Исправлю в след дз, а то мне сейчас по шапке прилетит что на работе делаю не то что надо -->
+        </div>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://x.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://ua.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="./pages/about.html">Про нас</a></li>
+          <li><a href="./pages/contacts.html">Контакти</a></li>
+          <li><a href="./pages/articles.html">Статті</a></li>
+          <li><a href="./pages/gallery.html">Галерея</a></li>
+        </ul>
+        <p>©2024 Честно украденно, можно украсть повторно</p>
+      </footer>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+      </script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+      </script>
+      <!--                   ↑ ФУТЕР  ↑                  -->
+    </body>
+</html>
